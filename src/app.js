@@ -5,7 +5,7 @@ import errorHandler from "errorhandler";
 import multer from "multer";
 import exphbs from "express-handlebars";
 import flash from "connect-flash";
-import session from "cookie-session";
+import session from "express-session";
 import passport from "passport";
 import "./config/passport";
 
