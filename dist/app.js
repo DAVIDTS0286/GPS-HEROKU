@@ -23,7 +23,7 @@ var _expressHandlebars = _interopRequireDefault(require("express-handlebars"));
 
 var _connectFlash = _interopRequireDefault(require("connect-flash"));
 
-var _expressSession = _interopRequireDefault(require("express-session"));
+var _cookieSession = _interopRequireDefault(require("cookie-session"));
 
 var _passport = _interopRequireDefault(require("passport"));
 
@@ -60,7 +60,7 @@ app.use(_express["default"].urlencoded({
   extended: false
 }));
 app.use(_express["default"].json());
-app.use((0, _expressSession["default"])({
+app.use((0, _cookieSession["default"])({
   secret: "somesecretkey",
   resave: true,
   saveUninitialized: true
