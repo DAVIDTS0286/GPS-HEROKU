@@ -43,7 +43,7 @@ var app = (0, _express["default"])(); // Settings
 
 app.set("views", _path["default"].join(__dirname, "./views"));
 app.engine(".hbs", (0, _expressHandlebars["default"])({
-  defaultLayout: "home",
+  defaultLayout: "main",
   layoutsDir: _path["default"].join(app.get("views"), "layouts"),
   partialsDir: _path["default"].join(app.get("views"), "partials"),
   helpers: helpers,
